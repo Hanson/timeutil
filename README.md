@@ -9,8 +9,8 @@ a tool processing time for golang
 
 time:2015-03-17 12:37:06 +0800 CST
 
-printf(timeutil.getDate(time))
+printf(timeutil.GetDate(time))
 //03-17
 
-printf(timeutil.getFullDate(time))
+printf(timeutil.GetFullDate(time))
 //2015-03-17
