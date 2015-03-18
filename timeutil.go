@@ -38,22 +38,22 @@ func GetFullDate(timeNow time.Time) string {
 }
 
 //2015-03-17 12
-func GetSDateWithHour(timeNow string) string {
+func GetDateWithHour(timeNow string) string {
 	return timeNow[0:13]
 }
 
 //2015-03-17 12:37
-func GetSDateWithTime(timeNow string) string {
+func GetDateWithTime(timeNow string) string {
 	return timeNow[0:16]
 }
 
 //12:37
-func GetSTime(timeNow string) string {
+func GetTime(timeNow string) string {
 	return timeNow[11:16]
 }
 
 //12:37:06
-func GetSTimeWithSec(timeNow string) string {
+func GetTimeWithSec(timeNow string) string {
 	return timeNow[11:19]
 }
 
