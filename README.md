@@ -5,6 +5,10 @@ a tool processing time for golang
 
   go get github.com/hanccc/timeutil
   
+#usage
+
+  import "github.com/hanccc/timeutil"
+  
 #for example
 
 time:2015-03-17 12:37:06 +0800 CST
