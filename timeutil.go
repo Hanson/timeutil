@@ -38,25 +38,66 @@ func GetFullDate(timeNow time.Time) string {
 }
 
 //2015-03-17 12
-func GetDateWithHour(timeNow time.Time) string {
-	times := timeNow.String()
-	return times[0:13]
+func GetSDateWithHour(timeNow string) string {
+	return timeNow[0:13]
 }
 
 //2015-03-17 12:37
-func GetDateWithTime(timeNow time.Time) string {
-	times := timeNow.String()
-	return times[0:16]
+func GetSDateWithTime(timeNow string) string {
+	return timeNow[0:16]
 }
 
 //12:37
-func GetTime(timeNow time.Time) string {
-	times := timeNow.String()
-	return times[11:16]
+func GetSTime(timeNow string) string {
+	return timeNow[11:16]
 }
 
 //12:37:06
-func GetTimeWithSec(timeNow time.Time) string {
-	times := timeNow.String()
-	return times[11:19]
+func GetSTimeWithSec(timeNow string) string {
+	return timeNow[11:19]
+}
+
+//03-17
+func GetSDate(timeNow string) string {
+	return timeNow[5:11]
+}
+
+//2015
+func GetSYear(timeNow string) string {
+	return timeNow[0:4]
+}
+
+//2015-03
+func GetSYearWithMon(timeNow string) string {
+	return timeNow[0:7]
+}
+
+//17
+func GetSDay(timeNow string) string {
+	return timeNow[8:10]
+}
+
+//2015-03-17
+func GetSFullDate(timeNow string) string {
+	return timeNow[0:11]
+}
+
+//2015-03-17 12
+func GetSDateWithHour(timeNow string) string {
+	return timeNow[0:13]
+}
+
+//2015-03-17 12:37
+func GetSDateWithTime(timeNow string) string {
+	return timeNow[0:16]
+}
+
+//12:37
+func GetSTime(timeNow string) string {
+	return timeNow[11:16]
+}
+
+//12:37:06
+func GetSTimeWithSec(timeNow string) string {
+	return timeNow[11:19]
 }
